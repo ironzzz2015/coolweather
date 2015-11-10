@@ -7,22 +7,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 	//province建表
-	public static final String 	CREAT_PROVINCE="creat table Province ("
+	public static final String 	CREAT_PROVINCE="create table Province ("
 			+"id integer primary key autoincrement,"
 			+"province_name text,"
 			+"province_code text)";
 	//city建表
 	
-	public static final String 	CREAT_CITY="creat table City ("
+	public static final String 	CREAT_CITY="create table City ("
 			+"id integer primary key autoincrement,"
 			+"city_name text,"
-			+"city_code text"
-			+"privince_id integer)";
+			+"city_code text,"
+			+"province_id integer)";
 	//country建表
-	public static final String 	CREAT_COUNTRY="creat table Country ("
+	public static final String 	CREAT_COUNTRY="create table Country ("
 			+"id integer primary key autoincrement,"
 			+"country_name text,"
-			+"country_code text"
+			+"country_code text,"
 			+"city_id integer)";
 	
 	
